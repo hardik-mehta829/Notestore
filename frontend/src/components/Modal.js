@@ -122,7 +122,7 @@ const Modal = ({ show, setShow }) => {
               });
             }}
             // className='w-[576px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300'
-            className='w-[576px]  h-14 px-2 rounded-md  border-2 '
+            className='w-[93%]  h-14 px-2 rounded-md  border-2 '
           ></input>
           <input
             type='text'
@@ -138,7 +138,7 @@ const Modal = ({ show, setShow }) => {
               });
             }}
             // className='w-[576px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300 mt-[40px]'
-            className='w-[576px]  h-14 px-2 rounded-md  border-2  mt-[40px]'
+            className='w-[93%]  h-14 px-2 rounded-md  border-2  mt-[40px]'
           ></input>
           <input
             type='text'
@@ -157,7 +157,7 @@ const Modal = ({ show, setShow }) => {
               });
             }}
             // className='w-[576px] h-14 px-2 rounded-md mt-[40px] border-2  hover:border-purple-300'
-            className='w-[576px] h-14 px-2 rounded-md mt-[40px] border-2  '
+            className='w-[93%] h-14 px-2 rounded-md mt-[40px] border-2  '
           ></input>
         </form>
         <button
