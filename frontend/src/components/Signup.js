@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import noteContext from '../context/notes/NoteContext';
+const API_BASE_URL = 'https://notestore2.onrender.com';
 const Signup = () => {
   const context = useContext(noteContext);
   const { token, setToken, showAlert } = context;

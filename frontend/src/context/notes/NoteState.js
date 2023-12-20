@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import NoteContext from './NoteContext';
+const API_BASE_URL = 'https://notestore2.onrender.com';
 const NoteState = (props) => {
   const [notes, setNote] = useState([]);
   const [token, setToken] = useState('');

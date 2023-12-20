@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import noteContext from '../context/notes/NoteContext';
 import { useNavigate } from 'react-router-dom';
-
+const API_BASE_URL = 'https://notestore2.onrender.com';
 const Login = () => {
   const [email, Setemail] = useState('');
   const [password, Setpassword] = useState('');
