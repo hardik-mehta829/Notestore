@@ -38,7 +38,7 @@ const Notes = () => {
     <>
       <Addnote show={show} setShow={setShow} />
 
-      <div className='grid grid-cols-6 ml-[2%]'>
+      <div className='grid grid-cols-4 ml-[2%]'>
         {notes.length === 0 && 'No notes to display'}
         {notes.map((n) => {
           return <Noteitem n={n} key={n._id} updateNote={updateNote} />;
