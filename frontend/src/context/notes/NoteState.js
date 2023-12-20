@@ -22,13 +22,16 @@ const NoteState = (props) => {
   const getAllNotes = async () => {
     console.log('Fetch all notes');
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/note/allnotes', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          token: localStorage.getItem('token'),
-        },
-      });
+      const response = await fetch(
+        'https://notestore2.onrender.com/api/note/allnotes',
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            token: localStorage.getItem('token'),
+          },
+        }
+      );
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -55,14 +58,17 @@ const NoteState = (props) => {
     if (description.length < 5)
       throw new Error('Minimum description length should be 5');
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/note/addnote', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          token: localStorage.getItem('token'),
-        },
-        body: JSON.stringify({ title, description, tag }),
-      });
+      const response = await fetch(
+        'https://notestore2.onrender.com/api/note/addnote',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            token: localStorage.getItem('token'),
+          },
+          body: JSON.stringify({ title, description, tag }),
+        }
+      );
       if (!response.ok) throw new Error('Note cannot be added');
       const data = await response.json();
       console.log(data);
@@ -76,7 +82,7 @@ const NoteState = (props) => {
   const deleteNote = async (note) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/api/note/deletenote/${note._id}`,
+        `https://notestore2.onrender.com/api/note/deletenote/${note._id}`,
         {
           method: 'DELETE',
           headers: {
@@ -101,7 +107,7 @@ const NoteState = (props) => {
   const editNote = async ({ _id, title, description, tag }) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/api/note/updatenote/${_id}`,
+        `https://notestore2.onrender.com/api/note/updatenote/${_id}`,
         {
           method: 'POST',
           headers: {

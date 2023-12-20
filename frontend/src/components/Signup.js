@@ -17,7 +17,7 @@ const Signup = () => {
       if (detail.password.length < 5)
         throw new Error('Minimum password length should be 5');
       const response = await fetch(
-        'http://127.0.0.1:5000/api/auth/createuser',
+        'https://notestore2.onrender.com/api/auth/createuser',
         {
           method: 'POST',
           headers: {

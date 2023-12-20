@@ -13,13 +13,16 @@ const Login = () => {
     console.log(email);
     console.log(password);
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/auth/login`, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        `https://notestore2.onrender.com/api/auth/login`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
       console.log(response);
       if (!response.ok) throw new Error('Please enter valid credentials');
       const data = await response.json();
