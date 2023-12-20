@@ -27,7 +27,7 @@ const Addnote = (show, setShow) => {
           id='title'
           name='title'
           // className='w-[876px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300'
-          className='w-[876px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300'
+          className='w-[93%]  h-14 px-2 rounded-md  border-2 hover:border-purple-300'
           onChange={(e) => handleDescription(e)}
         ></input>
         <input
@@ -38,7 +38,7 @@ const Addnote = (show, setShow) => {
           required
           name='tag'
           // className={`w-[876px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300 mt-[40px]`}
-          className={`w-[876px]  h-14 px-2 rounded-md  border-2 hover:border-purple-300  mt-[40px] `}
+          className={`w-[93%]  h-14 px-2 rounded-md  border-2 hover:border-purple-300  mt-[40px] `}
           onChange={(e) => handleDescription(e)}
         ></input>
         <input
@@ -50,7 +50,7 @@ const Addnote = (show, setShow) => {
           minLength={5}
           name='description'
           // className='w-[876px] h-14 px-2 rounded-md mt-[40px] border-2  hover:border-purple-300'
-          className='w-[876px] h-14 px-2 rounded-md mt-[40px] border-2  hover:border-purple-300'
+          className='w-[93%] h-14 px-2 rounded-md mt-[40px] border-2  hover:border-purple-300'
           onChange={(e) => handleDescription(e)}
         ></input>
       </form>

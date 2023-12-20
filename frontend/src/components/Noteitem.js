@@ -9,7 +9,7 @@ const Noteitem = (props) => {
     deleteNote(n);
   };
   return (
-    <div className='w-[300px] border-2 border-purple-800 rounded-xl flex flex-col'>
+    <div className='w-[300px] border-2 border-purple-800 rounded-xl flex flex-col '>
       <p className='text-2xl mx-auto'>{n.title}</p>
       <p>{n.description}</p>
       <div className='flex mt-9 ml-8'>
