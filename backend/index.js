@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json()); //middleware used to access body of request.
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.send('hello hardik');
 });
 app.use('/api/auth', authRouter);
