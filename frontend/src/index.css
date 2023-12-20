@@ -1,0 +1,128 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+body {
+  /* @apply bg-purple-400; */
+}
+@import 'tailwindcss/utilities';
+/* body {
+  background-color: rgb(204, 177, 250);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  color: white;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navstyle {
+  background-color: #7d3cf6;
+  color: white;
+}
+.intro {
+  margin-top: 155px;
+  padding: 30px;
+  color: white;
+  margin-left: 130px;
+  border-radius: 15px;
+  width: 500px;
+  background-color: #7d3cf6;
+}
+.intro h1 {
+  font-size: 50px;
+  font-family: serif;
+}
+.intro p {
+  font-size: 40px;
+}
+.intro span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.navbar button {
+  margin-right: 40px;
+  font-size: 25px;
+  padding: 0px 9px 0px 9px;
+  border-radius: 24px;
+
+  font-family: cursive;
+}
+.navbar button:hover {
+  cursor: pointer;
+}
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.listitem {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  margin-top: 2px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7d3cf6;
+}
+.formcontainer {
+  width: 500px;
+  height: 250px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 1200px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+.add {
+  margin-left: 195px;
+  margin-bottom: 29px;
+  font-size: 20px;
+}
+.hidden {
+  visibility: hidden;
+}
+.formcontainer form {
+  background-color: #1d1034;
+}
+#name {
+  margin-left: 55px;
+  margin-top: 18px;
+}
+#quantity {
+  margin-left: 28px;
+  margin-top: 18px;
+}
+#cost {
+  margin-left: 65px;
+  margin-top: 18px;
+}
+.formcontainer form label {
+  margin-left: 95px;
+}
+#sub {
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 205px;
+}
+.bottom {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(59, 13, 59);
+  font-size: 30px;
+  font-style: italic;
+  align-items: center;
+
+  justify-content: center;
+  color: white;
+} */
